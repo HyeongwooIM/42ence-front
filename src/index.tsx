@@ -15,7 +15,7 @@ const root = ReactDOM.createRoot(
 if (window.location.protocol === 'https:' && process.env.NODE_ENV === 'development') {
   // 개발 환경에서만 HTTP 요청을 허용
   // 리액트 개발 서버에 프록시 설정을 통해 HTTPS로 전달되는 요청을 HTTP로 변경하는 방법이 있음
-  process.env.REACT_APP_API_BASE_URL = `${process.env.REACT_APP_END_POINT}`;
+  process.env.REACT_APP_API_BASE_URL = 'http://api.example.com';}
 root.render(
   // <React.StrictMode>
   <RecoilRoot>
